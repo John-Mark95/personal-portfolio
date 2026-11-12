@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Mark, BSc. Software Development student at KCA University.">
+  <title>Mark | Software Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="top-header">
+    <a href="#home" class="logo">Mark<span>.dev</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <img src="images/profile.jpg" alt="Mark, a software development student at KCA University." class="profile-pic">
+      <div class="hero-text">
+        <p class="greeting">Hello, I am</p>
+        <h1>Mark</h1>
+        <h2>Software Development Student</h2>
+        <p>I am a BSc. Software Development student at KCA University in Nairobi. I build Android apps with Kotlin and Firebase, and web applications with HTML, CSS, Python and Django.</p>
+        <a href="#projects" class="btn">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Educational Background</h3>
+          <table>
+            <thead>
+              <tr><th>Institution</th><th>Programme</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>KCA University</td><td>BSc. Software Development</td><td>In progress</td></tr>
+              <tr><td>Fullstack Development Classes</td><td>Android, Django and Web</td><td>Ongoing</td></tr>
+            </tbody>
+          </table>
+          <p>I am passionate about turning ideas into working software that solves everyday problems for people in Kenya.</p>
+        </div>
+        <div class="card">
+          <h3>Personal Interests</h3>
+          <ul>
+            <li>Building mobile and web applications</li>
+            <li>Video gaming</li>
+            <li>Learning new technologies</li>
+            <li>Freelancing and digital skills</li>
+          </ul>
+          <h3>My Learning Path</h3>
+          <ol>
+            <li>Learn the fundamentals of computer systems</li>
+            <li>Master HTML, CSS and Git</li>
+            <li>Build real projects with Kotlin and Django</li>
+            <li>Land internships and freelance work</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-grid">
+        <li class="skill">Kotlin</li>
+        <li class="skill">Jetpack Compose</li>
+        <li class="skill">Firebase</li>
+        <li class="skill">Python</li>
+        <li class="skill">Django</li>
+        <li class="skill">HTML &amp; CSS</li>
+        <li class="skill">Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="card project">
+          <h3>CaterEase</h3>
+          <p class="tag">Android | Kotlin | Firebase</p>
+          <p>A catering app offering food delivery, event catering and meal plans. Orders are saved in real time to Firebase Firestore. Planned features include M-Pesa payments and push notifications.</p>
+        </article>
+        <article class="card project">
+          <h3>Exam Scores Analyser</h3>
+          <p class="tag">Algorithms | Pseudocode</p>
+          <p>An algorithm, with pseudocode and a flowchart, that takes a list of exam scores and outputs the highest score, the lowest score and the average.</p>
+        </article>
+        <article class="card project">
+          <h3>Small Office Network Design</h3>
+          <p class="tag">Networking | DNS | DHCP</p>
+          <p>A network design for a small office with a router, a switch and four devices, explaining how DHCP and DNS work when a device loads a website.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <h2 class="section-title">Contact</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Get In Touch</h3>
+          <p>Email: <a href="mailto:jmarkmwenda95@gmail.com">jmarkmwenda95@gmail.com</a></p>
+          <p>Location: Nairobi, Kenya</p>
+          <p>GitHub: <a href="https://github.com/John-Mark95" target="_blank" rel="noopener">github.com/John-Mark95</a></p>
+        </div>
+        <form class="card" action="mailto:jmarkmwenda95@gmail.com" method="post" enctype="text/plain">
+          <h3>Send a Message</h3>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mark | BSc. Software Development, KCA University</p>
+  </footer>
+
+</body>
+</html>
